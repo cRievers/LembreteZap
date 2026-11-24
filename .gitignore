@@ -1,0 +1,12 @@
+/scratchpad
+target/
+logs/*.log
+logs/*.lck
+.idea/
+*.iml
+target/
+logs/*.log
+logs/*.lck
+.idea/
+*.iml
+db.properties
