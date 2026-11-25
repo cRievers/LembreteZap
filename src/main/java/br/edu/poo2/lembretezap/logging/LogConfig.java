@@ -23,6 +23,7 @@ public final class LogConfig {
     public static final String LOG_FILE = "logs/lembretezap.log";
 
     private static boolean initialized = false;
+    private static Logger configuredRootLogger;
 
     private LogConfig() {
     }
@@ -55,6 +56,7 @@ public final class LogConfig {
             rootLogger.addHandler(fileHandler);
             rootLogger.addHandler(consoleHandler);
 
+            configuredRootLogger = rootLogger;
             initialized = true;
             rootLogger.logp(Level.FINE, LogConfig.class.getName(), "init",
                     "Subsistema de logging inicializado com sucesso.");
