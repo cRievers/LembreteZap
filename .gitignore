@@ -10,3 +10,4 @@ logs/*.lck
 .idea/
 *.iml
 db.properties
+logs
